@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+.business-header{
+    height: 1080px;
+    background-image: url('images/barberfull.jpeg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+}
+
+.navbar-inverse{
+    background-color:transparent;
+    border: none;
+    padding-top: 25px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    text-shadow: 2px 2px black;    
+}
+
+#title{
+    width: 900px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h1{
+    font-family: 'Tangerine', cursive;
+    font-size: 150px;
+    color: white;  
+    text-shadow: 2px 2px black;
+    width: 900px;
+    height: 100px;    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    
+}
+
+h2{
+    font-family: 'Tangerine', cursive;
+}
+
+p{
+    font-size: 13px;
+    line-height: 21px;
+}

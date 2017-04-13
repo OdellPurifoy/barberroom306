@@ -1,4 +1,4 @@
-# Barberroom306
+# Barber Room 306
 
 ##Details
 1. Created for my local barber shop.

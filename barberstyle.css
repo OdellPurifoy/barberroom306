@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Parisienne');
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 
+body{
+   background-color: whitesmoke; 
+}
+
+/* Background image style */
 .business-header{
     height: 1080px;
     background-image: url('images/barberfull.jpeg');
+    opacity: 0.8;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -12,19 +18,25 @@
     
 }
 
+/* Navbar styles */
 .navbar-inverse{
-    background-color:transparent;
+    background-color:white;
     border: none;
-    padding-top: 25px;
 }
 
 .navbar-inverse .navbar-nav>li>a{
-    color: white;
+    color: black;
     font-family: 'Tangerine', cursive;
     font-size: 30px;
-    text-shadow: 2px 2px black;    
+    text-shadow: 2px 2px whitesmoke;    
 }
 
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: black;
+    border-bottom: solid black 2px;
+}
+
+/*positioning style for 'Barber Room 306 title*/
 #title{
     width: 900px;
     height: 100px;
@@ -36,6 +48,7 @@
     margin: auto;
 }
 
+/* Style for Barber Room 306 text*/
 h1{
     font-family: 'Tangerine', cursive;
     font-size: 150px;
@@ -53,11 +66,49 @@ h1{
     
 }
 
-h2{
+/* Heading font styles */
+h2, h3{
     font-family: 'Tangerine', cursive;
 }
 
+/*Paragraph font and line height*/
 p{
     font-size: 13px;
     line-height: 21px;
 }
+
+/*Padding for each section for better spacing*/
+#about, #barbers, #gallery{
+    padding-top: 50px;
+    padding-right: 30px;
+}
+
+
+/*foot social media styles */
+.social{
+    color: black;
+}
+
+/*padding for top of footer section*/
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/*Styles for social media icons when hovered*/
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }

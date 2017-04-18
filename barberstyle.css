@@ -2,30 +2,50 @@
 @import url('https://fonts.googleapis.com/css?family=Parisienne');
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 
-.business-header{
+body{
+   background-color: whitesmoke; 
+}
+
+/* Background image style */
+.bgimage {
     height: 1080px;
     background-image: url('images/barberfull.jpeg');
+    background-position: center center;
+    background-size: cover;
+    opacity: ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
-    
+    -o-background-size: cover;   
 }
 
+/* Navbar styles */
 .navbar-inverse{
-    background-color:transparent;
-    border: none;
-    padding-top: 25px;
+    /*background-color: white;
+    border: none;*/
+   /* box-shadow: 4px 4px 4px black; */
 }
 
 .navbar-inverse .navbar-nav>li>a{
     color: white;
-    font-family: 'Tangerine', cursive;
-    font-size: 30px;
-    text-shadow: 2px 2px black;    
+    font-family: Helvetica;
+    font-size: 15px;
+  /*  text-shadow: 2px 2px whitesmoke;    */
 }
 
+.navbar-inverse .navbar-nav>li>a:hover{
+   /* color: black; */
+    border-bottom: solid #800000 2px;
+}
+
+.navbar-toggle{
+    color: #800000;
+}
+/*positioning style for 'Barber Room 306 title*/
 #title{
+    font-size: 150px;
+    color: white;
+    text-shadow: 2px 2px black;
     width: 900px;
     height: 100px;
     position: absolute;
@@ -36,28 +56,67 @@
     margin: auto;
 }
 
+/* Style for Barber Room 306 text*/
 h1{
-    font-family: 'Tangerine', cursive;
-    font-size: 150px;
-    color: white;  
-    text-shadow: 2px 2px black;
-    width: 900px;
-    height: 100px;    
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    font-family: 'Tangerine', cursive;    
+    color: #800000;  
     text-align: center;
     
 }
 
-h2{
+/* Heading font styles */
+h2, h3{
     font-family: 'Tangerine', cursive;
+    color: #800000;
 }
 
-p{
-    font-size: 13px;
-    line-height: 21px;
+#modalhead{
+    font-family: 'Tangerine', cursive;
+    font-size: 35px;
+    color: white;
 }
+/*Paragraph font and line height*/
+p{
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 125px;
+    padding-right: 125px;
+}
+
+/*Padding for each section for better spacing*/
+#about, #barbers, #gallery{
+    padding-top: 50px;
+    padding-right: 30px;
+}
+
+.thumbnail{
+    box-shadow: 2px 2px 2px 2px darkgray;
+}
+/*foot social media styles */
+.social{
+    color: black;
+}
+
+/*padding for top of footer section*/
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*Styles for social media icons when hovered*/
+.social:hover {
+     color: #800000;
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }

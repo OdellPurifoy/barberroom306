@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="full" lang="en">
-<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
 
 <head>
 
@@ -18,6 +18,8 @@
     <!-- Custom CSS -->
     <link href="barberstyle.css" rel="stylesheet">
 
+    <!-- Font Awesome styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,6 +31,7 @@
 
 <body>
 
+<div class="container-fluid">    
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -41,17 +44,20 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- Nav links for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#gallery">Gallery</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Book Appointment</a>
                     </li>
                 </ul>
             </div>
@@ -59,26 +65,21 @@
         </div>
         <!-- /.container -->
     </nav>
-
-    <!-- Put your page content here! -->
+</div>
+    
         <!--Header for background image-->
-    <header class="business-header">
-        <div class="container-fluid">
-            <div class="row" id="featured">
-                <div class="col-sm-12">                   
-                </div>            
-            </div>
+    <header class="bgimage">
+        <div class="container">
+            <h1 id="title">-Barber Room 306-</h1>
         </div>
     </header>
+   
     
-    <h1 id="title">-Barber Room 306-</h1>
-    
-    
-    <div class="container">
+    <div class="container" id="about"><!-- Container for the 'About' section-->
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="text-center">About</h2>
-                <p>Voted “Top Three” for barbershops in NYC from Business Insider, Barber Room 306 has been creating giving expert-level cuts since it’s opening in 2014. 
+                <h1 class="text-center">About</h1>
+                <p class="text-justify">Voted “Top Three” for barbershops in NYC from Business Insider, Barber Room 306 has been creating giving expert-level cuts since it’s opening in 2014. 
                     A hip Williamsburg vibe, they offer squeaky-clean fades and flawless scissor-work hairstyles. 
                     They focus on the things that matter; like quality, precision and top notch service. Check out our feature in Fractal’s New York: Barber Shop Tour.
 
@@ -91,27 +92,226 @@
         </div>    
     </div>
     
-    <div class="container">
+    <div class="container" id="barbers"><!-- Container for 'Barbers' section -->
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="text-center">Barbers</h2>
-                <p>Get clean with the experts! Scissor, straight-razor work and styling for all textures of hair. We are known for our old-school barber shop vibe.
+                <h1 class="text-center">Barbers</h1>
+                <p class="text-justify">Get clean with the experts! Scissor, straight-razor work and styling for all textures of hair. We are known for our old-school barber shop vibe.
                    Whether you want a vintage, classic, or modern look, we're the barber shop for you!</p>
             </div>
         </div>       
-    </div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2 class="text-center">Gallery</h2>
-            </div>
+        <div class="row"><!--Row containing images of barbers-->
+            <ul>
+                <li class="thumbnail col-sm-6"><img class="img-responsive" src="images/joey.jpg" alt="image of barber Joey">
+                    <div class="capstion">
+                        <h3 class="text-center">Joey</h3>
+                        <p class="text-center">Owner/Master Stylist</p>
+                    </div>                       
+                </li>
+                <li class="thumbnail col-sm-6"><img 
+                       class="img-responsive" src ="images/Meg.jpg" alt="image of stylist Meg">
+                    <div class="capstion">
+                        <h3 class="text-center">Meg</h3>
+                        <p class="text-center">Stylist</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     
+    <div class="container" id="gallery"><!-- Container for thumbnail gallery -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center">Gallery</h1>
+            </div>
+        </div>
+        <div class="row"><!-- list item for thumbnail gallery -->
+            <ul>               
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#style1L" data-toggle="modal"><img class=img-responsive src="images/style1.png"></a></li>
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#style2L" data-toggle="modal"><img class=img-responsive src="images/style2.png"></a></li>
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#style3L" data-toggle="modal"><img class=img-responsive src="images/style3.png"></a></li>
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#style4L" data-toggle="modal"><img class=img-responsive src="images/style4.png"></a></li>
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#style5L" data-toggle="modal"><img class=img-responsive src="images/style5.png"></a></li>
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#style6L" data-toggle="modal"><img class=img-responsive src="images/style6.png"></a></li>
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#style8L" data-toggle="modal"><img class=img-responsive src="images/style8.png"></a></li>
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#style9L" data-toggle="modal"><img class=img-responsive src="images/style9.png"></a></li>
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#style10L" data-toggle="modal"><img class=img-responsive src="images/style10.png"></a></li>
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#style11L" data-toggle="modal"><img class=img-responsive src="images/style11.png"></a></li>
+                <li class="thumbnail col-sm-3 col-xs-6"><a href="#buffyL" data-toggle="modal"><img class=img-responsive src="images/buffy.png"></a></li>
+            </ul>
+        </div>
+ </div>
     
+    <footer><!-- Start of footer section -->
+        <div class="text-center center-block" id="contact">
+            <p class="txt-railway">Hours: Monday-Friday 11:00am-8:00pm, Saturday & Sunday: 11:00am-6:00pm</p>
+            <p class="txt-railway">Address: 306 Graham Avenue, Brooklyn, NY </p>
+            <p class="txt-railway">Phone: (718) 576-3978 </p>
+            <br />
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="https://instagram.com/"><i class="fa fa-instagram fa-3x social"></i></a>
+            <a href="https://www.plus.google.com/"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+            <a href="https://www.yelp.com/"><i class="fa fa-yelp fa-3x social"></i></a>
+            <a href="mailto:BarberRoom306@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>    
+    </footer>
+
+        <div id="style1L" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Style 1</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/style1L.png" alt="Hair style 1" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        
+        <div id="style2L" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Style 2</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/style2L.png" alt="Hair style 2" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        
+        <div id="style3L" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Style 3</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/style3L.png" alt="Hair style 3" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        
+        <div id="style4L" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Style 4</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/style4L.png" alt="Hair style 4" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    
+       <div id="style5L" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Style 5</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/style5L.png" alt="Hair style 5" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div> 
+        
+        <div id="style6L" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Style 6</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/style6L.png" alt="Hair style 6" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        
+        <div id="style8L" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Style 8</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/style8L.png" alt="Hair style 8" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        
+        <div id="style9L" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Style 9</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/style9L.png" alt="Hair style 9" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    
+        <div id="style10L" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Style 10</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/style10L.png" alt="Hair style 10" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        
+        <div id="style11L" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Style 11</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/style11L.png" alt="Hair style 11" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        
+        <div id="buffyL" class="modal fade" tabindex="-1"><!-- Mondal windows -->
+            <div class="modal-dialog">
+                <div class="modal-header">                   
+                    <h3 class="text-center" id="modalhead">Buffy</h3>
+                </div>
+            </div>   
+            <div class="modal-body">
+                <img src="images/buffL.png" alt="Picture of dog" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        
     <!-- jQuery -->
-    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
